@@ -1,4 +1,5 @@
-#Akamai_Task 
+#Akamai_Task
+
 Selenium WebDriver Test
 
 This project is getting, interacting and verifying few information on https://akamaijobs.referrals.selectminds.com/ website.
