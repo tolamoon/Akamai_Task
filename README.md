@@ -4,7 +4,7 @@ Selenium WebDriver Test
 
 This project is getting, interacting and verifying few information on https://akamaijobs.referrals.selectminds.com/ website.
 
-To do the needful I used Intellij, Java, Maven and Selenium Webdriver to implement, execute software and interact with the Chrome browser(and of course Internet access;))
+To do the needful I used Intellij, Java, Maven and Selenium Webdriver to implement, execute software and interact with the Chrome browser(and stable Internet access:))
 
 Tools which I used are:
 1) chrome version 68.0.3440.75
