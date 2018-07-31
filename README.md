@@ -12,5 +12,5 @@ Moreover I set up my test with chromedriver stored under following path:
 "C:\chromedriver.exe"
 
 To execute following project, it is needed to type in Intellij terminal following maven command: 
--> mvn clean install
+> mvn clean install
 or simply Run from Intellij GUI.
