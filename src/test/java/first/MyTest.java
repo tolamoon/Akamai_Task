@@ -63,18 +63,18 @@ public class MyTest {
     @Test
     public void verifyAkamaiCareersWebsite() throws Exception {
 
-        //Validate number of results is 16
+        //Validate number of results
         WebElement results = ((ChromeDriver) driver).findElementByXPath("//*[@id=\"jobs_filters_title\"]/div/span[1]");
         verifyElementVisible(results);
         Thread.sleep(3000);
         System.out.println("Number of job results are " + results.getText());
         //Assert.assertTrue("Something gone not well. Cannot verify number of results.", results.getText().contains("15"));
 
-        //Validate "Software Development Engineer in Test" appears once
+        //Validate "Software Development Engineer in Test" appears just once
         System.out.println("'Software Development Engineer in Test' appears on website " + isTextPresent(SW_DEV_IN_TEST) + " time.");
         Assert.assertTrue("'Software Development Engineer in Test' appears once the website.",isTextPresent(SW_DEV_IN_TEST) > 0);
 
-        //Validate "Senior Software Development Engineer in Test" offer exists and if proper date
+        //Validate "Senior Software Development Engineer in Test" job offer exists and check posting date
         Assert.assertTrue("Not found 'Senior Software Development Engineer in Test's' offer on that page.",isTextPresent(SENIOR_SW_DEV_IN_TEST) > 0);
         WebElement seniorElem = ((ChromeDriver) driver).findElementByXPath("//*[@id=\"job_list_9186\"]/div/div[1]/p[1]/a");
         verifyElementVisible(seniorElem);
@@ -82,7 +82,7 @@ public class MyTest {
         WebElement date = ((ChromeDriver) driver).findElementByXPath("//*[@id=\"description_box\"]/div[1]/div[1]/dl[2]/dd/span[1]");
         verifyElementVisible(date);
         System.out.println("Date of posting Senior's offer is: " + date.getText());
-        //Assert.assertTrue("Date of the posted offer is different.", date.getText().contains("2 days ago"));
+        //Assert.assertTrue("Date of the posted offer is different.", date.getText().contains("1 day ago"));
 
         driver.close();
     }
