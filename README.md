@@ -1,4 +1,5 @@
-# SeleniumWebDriverTest
+#Akamai_Task 
+Selenium WebDriver Test
 
 This project is getting, interacting and verifying few information on https://akamaijobs.referrals.selectminds.com/ website.
 
@@ -11,5 +12,5 @@ Tools which I used are:
 Moreover I set up my test with chromedriver stored under following path: 
 "C:\chromedriver.exe"
 
-To execute following project, it is needed to type in Intellij terminal following maven command or simply Run from Intellij GUI.
+To execute following project, it is needed to type in Intellij terminal following maven command or simply "Run" from Intellij GUI.
 > mvn clean install
